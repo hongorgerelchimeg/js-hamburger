@@ -1,19 +1,20 @@
 let btnOpen = document.querySelector('.fa-bars');
 let btnClose = document.querySelector('.fa-times');
-let hamburgerMenu = document.querySelector('.hamburger-menu')
+let hamburgerMenu = document.querySelector('.hamburger-menu');
+
+const toggle = hamburgerMenu.classList;
 
 // Function Display Hamburger Menu
 
 btnOpen.addEventListener('click', 
     function() {
-        hamburgerMenu.style.display = 'block'
+        toggle.add('active');
     });
 
 // Function Hide Hamburger Menu
 
 btnClose.addEventListener('click', 
     function() {
-        hamburgerMenu.style.display = 'none'
+        toggle.remove('active');
     });
 
-    
